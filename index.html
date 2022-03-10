@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- This web page is a test of aside and bacbround image and favicon and youtube features -->
+<html lang="en" >
+	<head>
+		<meta charset="utf-8">
+		<title>Fluid</title>
+        
+        <style>
+          * { margin: 0; padding: 0; }
+            
+            body {
+                width: 90%;
+                background-color: white;
+                margin: 15px auto;
+                border: 1px solid black; }
+            h2 { padding: 1em; }
+            header { 
+                border-bottom: 2px solid #ef9c00; 
+                background-image: url(images/header_image.jpg);
+                height: 200px;}
+            main { 
+                height: 350px;    
+                /* to give the sidebar some height for its border */
+                width: 66%;
+                float: left;
+                border-right: 2px solid red; }
+            aside {
+                width: 15%;
+                float: right; }
+            .left {
+                float: left; 
+                width: 15%; 
+                border-right: 2px solid #ef9c00; 
+                height: 350px;}
+            footer {
+                clear: both;
+                border-top: 2px solid #ef9c00; }
+        </style>
+        <!-- No external style sheet used in this example style subfolder
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">-->
+        <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+	</head>
+    <body>
+        <header><h2>Header</h2></header>        
+        <aside class="left"><h2>Aside 1</h2></aside>
+        <main>
+            <h2>Main content</h2>
+            <iframe width="60%" height="200" src="https://www.youtube.com/embed/mhDJNfV7hjk" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </main>
+        <aside><h2>Aside 2</h2></aside>
+        <footer><h2>Footer</h2></footer>
+   </body>
+
